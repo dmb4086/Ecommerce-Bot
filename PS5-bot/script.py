@@ -76,7 +76,6 @@ class CheckStock:
             body=msg
         )
 
-
     def bestbuy(self):
         self .browser.get("https://www.bestbuy.com/site/sony-playstation-5-digital-edition-console/6430161.p?skuId=6430161")
 
