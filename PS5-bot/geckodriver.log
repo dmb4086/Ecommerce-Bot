@@ -2851,3 +2851,29 @@ Exiting due to channel error.
 Exiting due to channel error.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1618597973181	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/vg/4nfqj00x4cxd6d5lxhgxjdr40000gn/T/rust_mozprofileC10QNm"
+2021-04-16 14:32:54.792 firefox-bin[54156:4839469] Warning: Expected min height of view: (<NSButton: 0x132ab2400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-04-16 14:32:54.793 firefox-bin[54156:4839469] Warning: Expected min height of view: (<NSButton: 0x132ab1800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-04-16 14:32:54.793 firefox-bin[54156:4839469] Warning: Expected min height of view: (<NSButton: 0x132ab3c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-04-16 14:32:54.794 firefox-bin[54156:4839469] Warning: Expected min height of view: (<NSButton: 0x132e16c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-04-16 14:32:54.794 firefox-bin[54156:4839469] Warning: Expected min height of view: (<NSButton: 0x132e1a800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-04-16 14:32:54.795 firefox-bin[54156:4839469] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x132e19800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-04-16 14:32:54.795 firefox-bin[54156:4839469] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x132e21000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618597975933	Marionette	INFO	Listening on port 50143
+1618597975977	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1618598273146	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/vg/4nfqj00x4cxd6d5lxhgxjdr40000gn/T/rust_mozprofileSDxvTG"
+Exiting due to channel error.
+1618598387372	Marionette	INFO	Stopped listening on port 50143
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618598388898	Marionette	INFO	Stopped listening on port 49397
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618598390546	Marionette	INFO	Stopped listening on port 49214
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

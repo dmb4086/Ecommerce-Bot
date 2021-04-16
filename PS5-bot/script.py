@@ -92,7 +92,6 @@ class CheckStock:
         """
         load_dotenv(find_dotenv())
         api_key = os.environ.get("BEST_BUY_API_KEY")
-        # print(api_key)
         url = "https://api.bestbuy.com/v1/products(sku=6430161)?apiKey="+api_key+"&sort=onlineAvailability.asc&show=onlineAvailability&format=json"
 
         payload={}
@@ -107,6 +106,11 @@ class CheckStock:
         except KeyError:
             print("Key Error, Trying again")
             self.check_bestBuy()
+
+
+
+
+
 
 
 CheckStock()
