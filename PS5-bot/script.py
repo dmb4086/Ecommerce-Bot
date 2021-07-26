@@ -30,6 +30,7 @@ class CheckStock:
 
         """
         # get the current time for status updates
+        in_stock_flag = False
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
 
@@ -38,17 +39,31 @@ class CheckStock:
 
         time.sleep(7) # wait 5 seconds OR Check BestBuy
 
-        print(self.check_bestBuy())
+        # print(self.check_bestBuy())
 
         stock = self.browser.find_element_by_xpath('//*[@id="viewport"]/div[4]/div/div[2]/div[3]/div[1]/div/div/div')
-        in_stock = stock.get_attribute('innerHTML') # should say 'Sold Out'
+        in_stock = stock.get_attribute('innerHTML')
+        keyword = "Out of stock in stores near you"
+        if keyword in in_stock:
+            in_stock_flag = False
+        else:
+            in_stock_flag = True
 
-        if in_stock == "Sold out" and self.check_bestBuy()== False:
+
+        if not in_stock_flag and self.check_bestBuy() == False:
             print("Status: Sold Out \n"
                   "Last Checked: "+ current_time )
             time.sleep(15)
             self.browser.refresh()
             self.check_sites()
+
+        # Just target check (uncomment only for target)
+        # if not in_stock_flag:
+        #     print("Status: Sold Out \n"
+        #           "Last Checked: "+ current_time )
+        #     time.sleep(15)
+        #     self.browser.refresh()
+        #     self.check_sites()
 
         elif self.check_bestBuy():
             link = "https://www.bestbuy.com/site/sony-playstation-5-digital-edition-console/6430161.p?skuId=6430161"
